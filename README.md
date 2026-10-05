@@ -1,4 +1,6 @@
 # Login con Google y registro de eventos
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d60e2cb1-ecc2-4d77-ad6f-9a2d045d54b0/deploy-status)](https://app.netlify.com/projects/google-oidc-audit-demo)
+[Ver la app publicada](https://google-oidc-audit-demo.netlify.app)
 
 Proyecto para probar un inicio de sesión federado con Google en un sitio publicado en Netlify. Al entrar, la app muestra los datos básicos de la cuenta y un ID de Netlify Identity. El botón de salida cierra la sesión de la aplicación.
 
