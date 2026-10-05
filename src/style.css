@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #16233b; background: #f5f7fb; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(ellipse at 50% 10%, #fff 0, #f5f7fb 58%); }
+button { font: inherit; }
+.shell { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px 20px 26px; }
+.card { width: min(100%, 490px); border: 1px solid #e8edf5; border-radius: 24px; background: rgba(255,255,255,.94); box-shadow: 0 24px 70px rgba(32,51,83,.09); padding: 48px; }
+.brand-mark { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 13px; color: #fff; background: #2557d6; font: 800 17px 'Manrope', sans-serif; letter-spacing: -1px; box-shadow: 0 7px 15px #2557d633; }
+.eyebrow { margin: 30px 0 14px; color: #526a96; font-size: 11px; font-weight: 700; letter-spacing: .15em; }
+h1 { margin: 0; font: 800 clamp(30px, 6vw, 38px)/1.15 'Manrope', sans-serif; letter-spacing: -1.5px; color: #14213a; }
+.intro { margin: 16px 0 28px; color: #66748c; font-size: 15px; line-height: 1.65; }
+.trust-note { display: flex; gap: 11px; align-items: center; padding: 14px 15px; margin: 0 0 22px; border: 1px solid #e5ebf7; border-radius: 12px; background: #f8faff; color: #53647f; font-size: 12px; line-height: 1.5; }
+.shield { flex: none; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #e5efff; color: #2458d4; font-weight: 700; }
+.button { width: 100%; min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 12px; border: 1px solid #d9e0eb; border-radius: 12px; background: #fff; color: #25334b; cursor: pointer; font-weight: 600; transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+.button:hover { transform: translateY(-1px); border-color: #b9c6dc; box-shadow: 0 8px 20px #1e33550f; }
+.button:focus-visible { outline: 3px solid #88a9ff; outline-offset: 3px; }
+.button-google svg { width: 19px; height: 19px; }
+.legal, .footnote { margin: 17px 0 0; color: #8994a7; text-align: center; font-size: 11px; line-height: 1.6; }
+footer { margin-top: 25px; color: #9aa5b7; font-size: 10px; font-weight: 700; letter-spacing: .13em; text-align: center; }
+.profile-card { text-align: center; }
+.profile-card .brand-mark { margin: 0 auto; }
+.profile-card .eyebrow { margin-top: 25px; }
+.profile-card h1 { font-size: 32px; overflow-wrap: anywhere; }
+.profile-card .intro { margin-bottom: 25px; }
+.identity-panel { display: flex; align-items: center; gap: 16px; padding: 19px; border: 1px solid #e8edf5; border-radius: 15px; background: #fbfcff; text-align: left; }
+.avatar { width: 54px; height: 54px; flex: none; display: grid; place-items: center; border-radius: 18px; background: #e9efff; color: #2a56bf; font: 800 19px 'Manrope', sans-serif; }
+.identity-details { min-width: 0; display: grid; gap: 3px; }
+.identity-details strong { overflow-wrap: anywhere; color: #24334e; font-size: 13px; font-weight: 600; }
+.detail-label { color: #8b97aa; font-size: 10px; }
+.email-label { margin-top: 7px; }
+.id-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 16px 2px 20px; color: #8994a7; font-size: 11px; }
+.id-row code { max-width: 65%; overflow: hidden; color: #65738b; font: 11px ui-monospace, SFMono-Regular, Consolas, monospace; text-overflow: ellipsis; }
+.button-secondary { color: #a33c45; border-color: #f0dfe1; }
+.button-secondary:hover { border-color: #e3babe; }
+.button-secondary span { font-size: 16px; transform: rotate(45deg); }
+.notice { padding: 11px 13px; border-radius: 9px; color: #3158a4; background: #edf3ff; font-size: 12px; line-height: 1.5; }
+.loading { display: grid; place-items: center; min-height: 230px; color: #66748c; }
+.spinner { width: 26px; height: 26px; border: 3px solid #e5ebf5; border-top-color: #315ed0; border-radius: 50%; animation: spin .8s linear infinite; }
+.loading p { margin: 12px 0 0; font-size: 13px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 520px) { .shell { padding: 28px 14px 20px; } .card { padding: 32px 24px; border-radius: 19px; } .profile-card h1 { font-size: 28px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
